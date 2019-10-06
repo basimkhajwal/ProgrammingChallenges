@@ -1,17 +1,10 @@
-#include<iostream>
-#include<algorithm>
-#include<string>
-
-void permute(std::string str, long long num){
-	long long i = 1;
-	while(i<num)
-		std::next_permutation(str.begin(),str.end());
-	std::cout<<str;
-}
+#include <iostream>
+#include <algorithm>
+using namespace std;
 
 int main(){
-	std::string s = "0123456789";
-	permute(s, 1000000);
+	string s = "0123456789";
+	for (int i = 0; i < 1000000; i++) next_permutation(s.begin(), s.end());
+	cout << s << endl;
 	return 0;
 }
-	
