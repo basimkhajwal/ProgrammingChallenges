@@ -46,3 +46,6 @@
 
 # Haskell files
 *.hi
+
+# Python
+__pycache__
